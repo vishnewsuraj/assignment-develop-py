@@ -8,7 +8,7 @@ OOPs concepts
 class Parrot:
     pass
 
-'''
+
 # Object
 
 class Person:
@@ -28,8 +28,8 @@ print("Frontend developer is {}: ".format(personObjTwo.__class__.species))
 # access the instance attributes
 print("Name is {0} and designation is {1} ".format(personObjOne.name, personObjOne.designation))
 print("Name is {0} and designation is {1} ".format(personObjTwo.name, personObjTwo.designation))
-'''
-'''
+
+
 # Creating Method
 
 class Parrot:
@@ -45,9 +45,9 @@ class Parrot:
 blu = Parrot('Blu', 10)
 print(blu.sing("Happy"))
 print(blu.dance())
-'''
 
-'''
+
+
 # Inheritance
 
 # Parent class
@@ -82,9 +82,8 @@ peggy.whoIsThis()
 peggy.swim()
 peggy.run()
 
-'''
 
-'''
+
 # Data Encapsulation in Python
 
 class Computer:
@@ -108,7 +107,7 @@ c.sell()
 # using setter function
 c.setMaxPrice(1000)
 c.sell()
-'''
+
 
 # Polymorphism
 
