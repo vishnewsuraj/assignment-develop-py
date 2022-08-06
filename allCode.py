@@ -89,6 +89,27 @@ print(str)
 Accept some text as input and print all words in descending order of their occurrence
 '''
 
+'''
+# Check if a year is a leap year or not
+
+year = int(input("Enter your year : "))
+if (year % 400 == 0 ) and (year % 100 == 0):
+    print("{0} is leap year".format(year))
+if (year % 4 == 0) and (year % 100 != 0):
+    print("{0} is leap year : ".format(year))
+else:
+    print("{0} is not a leap year : ".format(year))
+'''
+
+from collections import OrderedDict
+
+domain = OrderedDict([('de', 'Germany'),
+                      ('sk', 'Slovakia'),
+                      ('hu', 'Hungary'),
+                      ('us', 'United States'),
+                      ('no', 'Norway')])
+print('domain', domain)
+
 
 
 
