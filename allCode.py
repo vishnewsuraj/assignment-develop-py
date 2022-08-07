@@ -137,5 +137,9 @@ print("This is final dictionary {}".format(newDict))
 
 # 10 - Accept a string of words and an integer k as input. Shorten the string to contains complete words up to k characters.
 
+k = int(input("Enter your number : "))
+str = 'suraj'
 
-
+result = ''.join(sorted(str))
+newS = result[:k]
+print(newS)
