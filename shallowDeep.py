@@ -6,7 +6,7 @@ newData = copy.copy(data)
 
 newData[0][2] = 'c'
 print('New Shallow copy data : {}'.format(newData))
-print('Previous Shallow copy data : {}'.format(data))
+print('Previous data : {}'.format(data))
 
 # Deep copy
 
