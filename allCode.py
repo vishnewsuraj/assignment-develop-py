@@ -1,5 +1,5 @@
 '''
-# factorial
+# 1 factorial
 enter = int(input("Enter your number : "))
 factorial = 1
 
@@ -14,7 +14,7 @@ else:
 '''
 
 '''
-# Find n-th fibonacci number
+# 2 Find n-th fibonacci number
 
 def fabonacci(n):
     if n <= 0:
@@ -30,7 +30,7 @@ print(fabonacci(10))
 '''
 
 '''
-# Check if a number is prime or not
+# 3 - Check if a number is prime or not
 
 primeNumber = int(input("Enter your prime number : "))
 
@@ -48,7 +48,7 @@ else:
 '''
 
 '''
-# Rotate a list by n places (accept list, and integer as input)
+# 4 - Rotate a list by n places (accept list, and integer as input)
 
 number = int(input("Enter your number : "))
 listOne = [1, 2, 3, 4, 5, 6]
@@ -60,7 +60,7 @@ print(listOne)
 '''
 
 '''
-# Find all characters that appear more than once in a string
+# 5 - Find all characters that appear more than once in a string
 
 checkString = 'aaaaa'
 count = {}
@@ -76,7 +76,7 @@ for key in count:
 '''
 
 '''
-# Replace all occurrences of a word in a string (accepted as input the word u want to replace)
+# 6 - Replace all occurrences of a word in a string (accepted as input the word u want to replace)
 
 enterString = input("Enter your string : ")
 str = "Hey guys how are you and how is your going on"
@@ -85,7 +85,7 @@ print(str)
 '''
 
 '''
-# Accept some text as input and print all words in descending order of their occurrence
+# 7 - Accept some text as input and print all words in descending order of their occurrence
 
 enterText = input("Enter your text : ")
 def descText(s):
@@ -103,7 +103,7 @@ if __name__=="__main__":
 '''
 
 '''
-# Check if a year is a leap year or not
+# 8 - Check if a year is a leap year or not
 
 year = int(input("Enter your year : "))
 if (year % 400 == 0 ) and (year % 100 == 0):
@@ -114,22 +114,28 @@ else:
     print("{0} is not a leap year : ".format(year))
 '''
 
-'''
-# 1 - Create ordered dictionary from an unordered dictionary
 
+# 9 - Create ordered dictionary from an unordered dictionary
+
+import random
 from collections import OrderedDict
 
-domain = OrderedDict([('de', 'Germany'),
-                      ('sk', 'Slovakia'),
-                      ('hu', 'Hungary'),
-                      ('us', 'United States'),
-                      ('no', 'Norway')])
-print('domain', domain)
-'''
+myDict = {
+    'a': 1,
+    'b': 2,
+    'c': 3,
+    'd': 4,
+    'e': 5
+}
+
+items = list(myDict.items())
+random.shuffle(items)
+result = dict(items)
+newDict = dict(OrderedDict(sorted(result.items())))
+print("This is final dictionary {}".format(newDict))
 
 
-# 2 - Create ordered dictionary from an unordered dictionary
-
+# 10 - Accept a string of words and an integer k as input. Shorten the string to contains complete words up to k characters.
 
 
 
